@@ -1,0 +1,15 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.contoso.VetToVeterinary
+displayName: Rename Vet to Veterinary
+recipeList:
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.springframework.samples.petclinic.vet
+      newPackageName: org.springframework.samples.petclinic.veterinary
+
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.contoso.OrderImports
+displayName: Order imports
+recipeList:
+  - org.openrewrite.java.OrderImports
